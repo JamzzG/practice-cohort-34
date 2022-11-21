@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=""width=device-width, initial-scale=1.0", initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>myAmazon Online Store</h1>
+    </header>
+
+    <main>
+        <h2>Add a new transaction</h2>
+        <div>
+            <label for="product">Product: </label>
+            <input type="text" name="product" placeholder="Enter a detailed product Description" id="txtProduct">
+            <label for="price">Price $</label>
+            <input type="number" placeholder="Add the price" id="txtPrice" pattern="^\d*(\.\d{0,2})?$" />
+            
+            <button onclick="register();">Add Product</button>
+
+        </div>
+
+        <h2>Products in the cart <sup  id="productsInCart"></sup></h2>
+        <table>
+            <thead>
+                <th>Item #</th>
+                <th>Product Description</th>
+                <th class="price-box">Price</th>
+            </thead>
+            <tbody id="productsTable">
+            
+            </tbody>
+        </table>
+
+    </main>
+    <script src="https:code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!-- This Has to be before the rest of Javascript is loaded -->
+    <script src="script.js"></script>
+    
+</body>
+</html>

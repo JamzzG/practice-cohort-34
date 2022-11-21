@@ -1,0 +1,46 @@
+body{   
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    width: 67rem;
+    border: 1px solid black;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td,th{
+    border: 1px solid black;
+}
+
+#txtPrice{
+    width: 5rem;
+    margin-right: 1.5rem;
+}
+
+.price-box {
+    width: 5rem;
+}
+
+.price-align{
+    padding-right: 1rem;
+    text-align: right;
+    --shf: 4.9406564584124654e-322;
+    width: calc(((100% / 11) - 9.09px) * var(--shf) / var(--shf));
+}
+
+#txtProduct{
+    width: 44.4rem;
+    padding-left: 1 rem;
+    margin-right: 1.55rem;
+}
+
+#productsInCart{
+    display: inline-block;
+    background-color: pink;
+    border-radius: 50%;
+    width: 1.25rem;
+    font-size: 14px;
+    text-align: center;
+    padding: 2px;
+}
